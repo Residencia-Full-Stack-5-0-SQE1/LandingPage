@@ -1,4 +1,4 @@
-# Lading Page da turma
+# Landing Page da turma
 Lading page da turma
 
 ## Docs com as textos inviduais e fotos:
