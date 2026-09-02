@@ -1,0 +1,292 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Fundo externo da página */
+    background-color: #fff;
+
+    color: #172b3d;
+}
+
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.pagina {
+    width: 96%;
+    max-width: 1200px;
+    margin: 12px auto;
+
+    background-color: #edf7ff;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 2px solid #aeb8c0;
+
+    padding: 0 28px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0795d3;
+
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 28px;
+}
+
+nav a {
+    color: #202020;
+
+    text-decoration: none;
+
+    font-family: monospace;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #0795d3;
+}
+
+nav a.ativo {
+    color: #0795d3;
+}
+
+
+/* =========================
+   SEÇÃO INICIAL
+========================= */
+
+.inicio {
+    min-height: 385px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+
+    padding-top: 27px;
+}
+
+
+/* =========================
+   LOGO CENTRAL
+========================= */
+
+.logo-central {
+    color: #0795d3;
+
+    font-family: monospace;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================
+   TEXTO RESIDÊNCIA
+========================= */
+
+.residencia {
+    color: #808080;
+
+    font-size: 23px;
+
+    margin-bottom: 1px;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+h1 {
+    color: #172b3d;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.descricao {
+    width: 600px;
+    max-width: 90%;
+
+    color: #222;
+
+    font-size: 14px;
+    line-height: 19px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 11px 23px;
+
+    border: 1.5px solid #222;
+    border-radius: 30px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-family: monospace;
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+.botao span {
+    font-size: 20px;
+}
+
+.botao:hover {
+    background-color: #172b3d;
+    color: white;
+}
+
+
+/* =========================
+   OUTRAS SEÇÕES
+========================= */
+
+section:not(.inicio) {
+    min-height: 400px;
+
+    padding: 80px 10%;
+
+    text-align: center;
+
+    border-top: 1px solid #ccd5dc;
+}
+
+section h2 {
+    color: #172b3d;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    .pagina {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .inicio {
+        padding-top: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .descricao {
+        width: 90%;
+    }
+}
