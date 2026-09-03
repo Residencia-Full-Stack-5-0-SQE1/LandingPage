@@ -127,6 +127,12 @@ h2{
 
 }
 
+.integrantes{
+     display: flex;
+    gap: 50px;           /* Espaço entre os quadros */
+    justify-content: center;
+}
+
 .stacks {
     display: flex;
     gap: 10px;           /* Espaço entre os quadros */
