@@ -72,32 +72,7 @@ h2{
    
 }
 
-.btmetodologia{
-    
-    display: flex;
-    width: fit-content;  /* garante que a largura seja só o necessário */
-    margin: auto;
- 
-    padding: 16px 32px;
-    border: 2px solid #202020;
-    border-radius: 100px;
-    
-    color: #202020;
-    font-family: monospace;
-    font-size: 28px;
-    text-decoration: none;
 
-     transition: 0.2s ;
-    
-}
-
-.btmetodologia:hover {
-  color: #0795d3;
-}
-
-.tag{
-    color: #0795d3;
-}
 
 
 
