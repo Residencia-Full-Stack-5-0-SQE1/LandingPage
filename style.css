@@ -1,13 +1,14 @@
 
 
 main {
-    padding-top: 130px;
+    padding-top: 110px;
+    scroll-behavior: smooth;
 }
 
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    
     font-family: Arial, Helvetica, sans-serif;
 
     /* Fundo externo da página */
@@ -33,11 +34,20 @@ header {
     padding: 0 28px;
 }
 
+#inicio,
+#integrantes,
+#metodologia,
+#projetos,
+#sobre {
+    scroll-margin-top: 110px;
+}
+
 h2{ 
     font-family: monospace;
     font-size: 34px;
     font-weight: 100;
 }
+
 
 
 .logo {
@@ -52,6 +62,8 @@ h2{
     justify-content: center;
     
 }
+
+
 
 .navegacao{
     display: flex;
