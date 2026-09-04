@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cards com Pop-up</title>
+
+    <style>
+
+        /* =========================
+           CONFIGURAÇÕES GERAIS
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            min-height: 100vh;
+            padding: 50px;
+        }
+
+
+        /* =========================
+           CARDS
+        ========================= */
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+
+        /* =========================
+           ESCONDE O CHECKBOX
+        ========================= */
+
+        .modal-checkbox {
+            display: none;
+        }
+
+
+        /* =========================
+           MODAL
+        ========================= */
+
+        .modal {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.7);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: 0.3s;
+        }
+
+
+        /* =========================
+           QUANDO O CHECKBOX ESTÁ MARCADO
+        ========================= */
+
+        .modal-checkbox:checked + .modal {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* =========================
+           CONTEÚDO DO POP-UP
+        ========================= */
+
+        .modal-content {
+            width: 500px;
+            max-width: 90%;
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            position: relative;
+
+            transform: scale(0.7);
+
+            transition: 0.3s;
+        }
+
+        .modal-checkbox:checked + .modal .modal-content {
+            transform: scale(1);
+        }
+
+
+        /* IMAGEM DO MODAL */
+
+        .modal-content img {
+            width: 100%;
+            height: 220px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* TÍTULO */
+
+        .modal-content h2 {
+            margin-bottom: 15px;
+        }
+
+
+        /* TEXTO */
+
+        .modal-content p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+
+        /* =========================
+           BOTÃO FECHAR
+        ========================= */
+
+        .fechar {
+            position: absolute;
+
+            top: 15px;
+            right: 20px;
+
+            font-size: 30px;
+
+            cursor: pointer;
+
+            color: #555;
+        }
+
+        .fechar:hover {
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="cards">
+
+        <!-- CARD -->
+
+        <label for="modal1" class="card">
+
+            <img src="https://picsum.photos/400/250?random=1">
+
+            <h2>Atividade 01</h2>
+
+            <p>
+                Clique para ver mais informações.
+            </p>
+
+        </label>
+
+
+        <!-- CARD 2 -->
+
+        <label for="modal2" class="card">
+
+            <img src="https://picsum.photos/400/250?random=2">
+
+            <h2>Atividade 02</h2>
+
+            <p>
+                Clique para ver mais informações.
+            </p>
+
+        </label>
+
+
+        <!-- CARD 3 -->
+
+        <label for="modal3" class="card">
+
+            <img src="https://picsum.photos/400/250?random=3">
+
+            <h2>Atividade 03</h2>
+
+            <p>
+                Clique para ver mais informações.
+            </p>
+
+        </label>
+
+    </div>
+
+
+
+    <!-- =================================
+         MODAL 1
+    ================================= -->
+
+    <input type="checkbox" id="modal1" class="modal-checkbox">
+
+    <div class="modal">
+
+        <div class="modal-content">
+
+            <label for="modal1" class="fechar">
+                &times;
+            </label>
+
+            <img src="https://picsum.photos/600/300?random=1">
+
+            <h2>Atividade 01</h2>
+
+            <p>
+                Aqui você pode colocar todas as informações
+                relacionadas à atividade.
+            </p>
+
+            <br>
+
+            <p>
+                Pode adicionar descrição, data, participantes,
+                tecnologias utilizadas, resultados, links,
+                imagens, etc.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         MODAL 2
+    ================================= -->
+
+    <input type="checkbox" id="modal2" class="modal-checkbox">
+
+    <div class="modal">
+
+        <div class="modal-content">
+
+            <label for="modal2" class="fechar">
+                &times;
+            </label>
+
+            <img src="https://picsum.photos/600/300?random=2">
+
+            <h2>Atividade 02</h2>
+
+            <p>
+                Informações detalhadas da segunda atividade.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         MODAL 3
+    ================================= -->
+
+    <input type="checkbox" id="modal3" class="modal-checkbox">
+
+    <div class="modal">
+
+        <div class="modal-content">
+
+            <label for="modal3" class="fechar">
+                &times;
+            </label>
+
+            <img src="https://picsum.photos/600/300?random=3">
+
+            <h2>Atividade 03</h2>
+
+            <p>
+                Informações detalhadas da terceira atividade.
+            </p>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
