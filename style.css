@@ -203,6 +203,7 @@ h3 {
     color: #0795d3;
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    
 }
 
 /* DAQUI PRA BAIXO É INTEGRANTES */
@@ -261,7 +262,8 @@ h3 {
 .stack:hover {
 
     transform: translateY(-5px);
-    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
 }
 
 
