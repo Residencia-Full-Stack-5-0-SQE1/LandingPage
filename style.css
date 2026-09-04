@@ -1,5 +1,3 @@
-
-
 main {
     padding-top: 110px;
     scroll-behavior: smooth;
@@ -8,14 +6,14 @@ main {
 body {
     box-sizing: border-box;
     margin: 0;
-    
+
     font-family: Arial, Helvetica, sans-serif;
 
     /* Fundo externo da página */
     background-color: #fff;
 
     color: #172b3d;
-     
+
 }
 
 
@@ -23,7 +21,7 @@ header {
     position: fixed;
     width: 100%;
     height: 75px;
-    background-color:#f0f8ff;
+    background-color: #f0f8ff;
 
     display: flex;
     align-items: center;
@@ -56,7 +54,7 @@ nav a {
 
 nav a:hover {
     color: #0795d3;
-    
+
 }
 
 
@@ -69,7 +67,7 @@ nav a:hover {
     scroll-margin-top: 110px;
 }
 
-h2{ 
+h2 {
     font-family: monospace;
     font-size: 34px;
     font-weight: 100;
@@ -77,28 +75,37 @@ h2{
 }
 
 
+h3 {
+    margin: 30px;
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+
 
 .logo {
     width: 90px;
     display: flex;
-   
+
 }
 
-.logoOriginal{
+.logoOriginal {
     display: flex;
     height: 250px;
     justify-content: center;
-    
+
 }
 
 
 
-.navegacao{
+.navegacao {
     display: flex;
     align-items: center;
     text-align: center;
-  
-    
+
+
 }
 
 .descricao {
@@ -111,53 +118,62 @@ h2{
     text-align: center;
 
     font-size: 24px;
-   
+
 }
 
-.btmetodologia{
-    
+.btmetodologia {
+
     display: flex;
-    width: fit-content;  /* garante que a largura seja só o necessário */
+    width: fit-content;
+    /* garante que a largura seja só o necessário */
     margin: auto;
- 
+
     padding: 16px 32px;
     border: 1px solid #202020;
     border-radius: 100px;
-    
+
     color: #202020;
     font-family: monospace;
     font-size: 24px;
     text-decoration: none;
-     background-color:#f0f8ff;
+    background-color: #f0f8ff;
 
-     transition: 0.2s ;
-    
+    transition: 0.2s;
+
 }
 
 .btmetodologia:hover {
-  color: #0795d3;
-  transform: translateY(-5px);
+    color: #0795d3;
+    transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.tag{
+.tag {
     color: #0795d3;
 }
 
-.metodologia{
-    
+.metodologia {
+
     width: 800px;
     margin-left: 30px;
-    
+
     font-family: Helvetica;
 
     text-align: left;
 
     font-size: 28px;
-   
+
 
 }
+
 .estudantes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.mentores{
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -184,12 +200,12 @@ h2{
 }
 
 .integrantes:hover {
-  color: #0795d3;
-  transform: translateY(-5px);
-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #0795d3;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Ícone */
+/* DAQUI PRA BAIXO É INTEGRANTES */
 .icone {
     width: 200px;
     height: 230px;
@@ -219,15 +235,15 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 
 .stacks {
     display: flex;
-    gap: 10px;           /* Espaço entre os quadros */
+    gap: 10px;
     justify-content: center;
-      /* Quebra a linha se faltar espaço */
+    
 }
 
-.stack{
-     
+.stack {
+
     display: flex;
-    width: 200px;  /* garante que a largura seja só o necessário */
+    width: 200px;
     margin: auto;
     gap: 35px;
     margin: 35px;
@@ -238,17 +254,15 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
     color: #0795d3;
 
-     background-color:#f0f8ff;
+    background-color: #f0f8ff;
 
 }
 
-.stack:hover{
-   
-  transform: translateY(-5px);
+.stack:hover {
+
+    transform: translateY(-5px);
     box-shadow: 0 100px 100px rgba(0, 0, 0, 0.15);
 }
-
-
 
 
 footer img {
@@ -262,3 +276,148 @@ footer img {
 
 
 
+
+
+
+
+/* =========================
+           ESCONDE O CHECKBOX
+        ========================= */
+
+.modal-checkbox {
+    display: none;
+}
+
+
+/* =========================
+           MODAL
+        ========================= */
+
+.modal {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+           QUANDO O CHECKBOX ESTÁ MARCADO
+        ========================= */
+
+.modal-checkbox:checked+.modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================
+           CONTEÚDO DO POP-UP
+        ========================= */
+
+.modal-content {
+    width: 1000px;
+    height: 250px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #202020;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    transform: scale(0.7);
+
+    transition: 0.3s;
+}
+
+.modal-checkbox:checked+.modal .modal-content {
+    transform: scale(1);
+}
+
+
+/* IMAGEM DO MODAL */
+
+.modal-content img {
+    width: 200px;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+/* TÍTULO */
+
+.modal-content h2 {
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO */
+
+.modal-content p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* =========================
+           BOTÃO FECHAR
+        ========================= */
+
+.fechar {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.fechar:hover {
+    color: #0094d6;
+}
+
+.linkedin {
+
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 10px 20px;
+
+    background-color: #fff;
+    color: black;
+    border: 1px solid #202020;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.linkedin:hover {
+    background-color: #f0f8ff;
+     
+    
+}
