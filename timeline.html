@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linha do Tempo</title>
+
+    <style>
+
+        /* =========================
+           CONFIGURAÇÕES GERAIS
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #222;
+        }
+
+
+        /* =========================
+           TÍTULO
+        ========================= */
+
+        .titulo {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+
+        .titulo h1 {
+            color: #0795d3;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color: #666;
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           LINHA DO TEMPO
+        ========================= */
+
+        .timeline {
+            position: relative;
+
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 20px 0 80px;
+        }
+
+
+        /* Linha central */
+
+        .timeline::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+
+            left: 50%;
+
+            width: 4px;
+
+            background-color: #0795d3;
+
+            transform: translateX(-50%);
+        }
+
+
+        /* =========================
+           ITEM DA TIMELINE
+        ========================= */
+
+        .timeline-item {
+            position: relative;
+
+            width: 100%;
+
+            margin-bottom: 80px;
+
+            display: flex;
+
+            justify-content: flex-start;
+        }
+
+
+        /* Alternar os cards */
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+
+        /* =========================
+           BOLINHA
+        ========================= */
+
+        .timeline-item::before {
+            content: "";
+
+            position: absolute;
+
+            left: 50%;
+            top: 35px;
+
+            width: 18px;
+            height: 18px;
+
+            background-color: white;
+
+            border: 4px solid #0795d3;
+
+            border-radius: 50%;
+
+            transform: translateX(-50%);
+
+            z-index: 2;
+        }
+
+
+        /* =========================
+           DATA
+        ========================= */
+
+        .timeline-data {
+            position: absolute;
+
+            top: -15px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            background-color: #0795d3;
+
+            color: white;
+
+            padding: 8px 18px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            z-index: 3;
+
+            white-space: nowrap;
+        }
+
+
+        /* =========================
+           CARD
+        ========================= */
+
+        .timeline-card {
+            width: 45%;
+
+            background-color: #f0f8ff;
+
+            border: 1px solid #ccc;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+            transition: 0.3s;
+        }
+
+
+        /* Efeito quando passar o mouse */
+
+        .timeline-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* =========================
+           FOTO
+        ========================= */
+
+        .timeline-card img {
+            width: 100%;
+
+            height: 230px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        /* =========================
+           CONTEÚDO
+        ========================= */
+
+        .timeline-conteudo {
+            padding: 25px;
+        }
+
+
+        .timeline-conteudo h2 {
+            color: #0795d3;
+
+            font-size: 24px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .timeline-conteudo p {
+            color: #333;
+
+            font-size: 16px;
+
+            line-height: 1.6;
+
+            text-align: justify;
+        }
+
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            /* Linha vai para a esquerda */
+
+            .timeline::before {
+                left: 20px;
+            }
+
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                justify-content: flex-start;
+
+                padding-left: 50px;
+            }
+
+
+            /* Bolinha */
+
+            .timeline-item::before {
+                left: 20px;
+            }
+
+
+            /* Data */
+
+            .timeline-data {
+                position: relative;
+
+                left: auto;
+                top: auto;
+
+                transform: none;
+
+                display: inline-block;
+
+                margin-bottom: 15px;
+            }
+
+
+            /* Card ocupa quase toda a tela */
+
+            .timeline-card {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TÍTULO
+    ========================== -->
+
+    <div class="titulo">
+
+        <h1>Minha Jornada</h1>
+
+        <p>
+            Atividades realizadas durante a Residência Full Stack 5.0
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         LINHA DO TEMPO
+    ========================== -->
+
+    <section class="timeline">
+
+
+        <!-- ATIVIDADE 1 -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-data">
+                AGOSTO 2026
+            </div>
+
+
+            <div class="timeline-card">
+
+                <img
+                    src="https://picsum.photos/600/400?random=1"
+                    alt="Atividade de introdução"
+                >
+
+
+                <div class="timeline-conteudo">
+
+                    <h2>
+                        Início da Residência
+                    </h2>
+
+
+                    <p>
+                        Nesta atividade tivemos o primeiro contato com a
+                        Residência Full Stack 5.0. Conhecemos a proposta
+                        do programa, os participantes e a metodologia
+                        utilizada durante a formação.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ATIVIDADE 2 -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-data">
+                AGOSTO 2026
+            </div>
+
+
+            <div class="timeline-card">
+
+                <img
+                    src="https://picsum.photos/600/400?random=2"
+                    alt="Atividade de programação"
+                >
+
+
+                <div class="timeline-conteudo">
+
+                    <h2>
+                        Desenvolvimento em Java
+                    </h2>
+
+
+                    <p>
+                        Durante esta atividade aprofundamos nossos
+                        conhecimentos em programação Java, trabalhando
+                        conceitos importantes para o desenvolvimento
+                        de aplicações e resolução de problemas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ATIVIDADE 3 -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-data">
+                SETEMBRO 2026
+            </div>
+
+
+            <div class="timeline-card">
+
+                <img
+                    src="https://picsum.photos/600/400?random=3"
+                    alt="Trabalho em equipe"
+                >
+
+
+                <div class="timeline-conteudo">
+
+                    <h2>
+                        Trabalho em Equipe
+                    </h2>
+
+
+                    <p>
+                        Realizamos uma atividade colaborativa com o
+                        objetivo de desenvolver habilidades de comunicação,
+                        organização, liderança e trabalho em equipe.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ATIVIDADE 4 -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-data">
+                SETEMBRO 2026
+            </div>
+
+
+            <div class="timeline-card">
+
+                <img
+                    src="https://picsum.photos/600/400?random=4"
+                    alt="Atividade prática"
+                >
+
+
+                <div class="timeline-conteudo">
+
+                    <h2>
+                        Atividade Prática
+                    </h2>
+
+
+                    <p>
+                        Aplicamos os conhecimentos adquiridos durante
+                        as aulas em uma atividade prática, colocando
+                        em funcionamento os conceitos estudados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>

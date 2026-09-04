@@ -34,6 +34,33 @@ header {
     padding: 0 28px;
 }
 
+nav {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+}
+
+nav a {
+    color: #202020;
+    text-decoration: none;
+
+    font-family: monospace;
+    font-size: 25px;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #0795d3;
+    
+}
+
+
+
 #inicio,
 #integrantes,
 #metodologia,
@@ -109,6 +136,8 @@ h2{
 
 .btmetodologia:hover {
   color: #0795d3;
+  transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .tag{
@@ -152,6 +181,12 @@ h2{
 
     box-sizing: border-box;
     padding: 20px;
+}
+
+.integrantes:hover {
+  color: #0795d3;
+  transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Ícone */
@@ -207,33 +242,23 @@ h2{
 
 }
 
+.stack:hover{
+   
+  transform: translateY(-5px);
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.15);
+}
 
-nav {
-    flex: 1;
 
+
+
+footer img {
+    width: 40%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 50px;
+    margin-block-end: 30px;
+    justify-self: center;
 }
 
-nav a {
-    color: #202020;
-    text-decoration: none;
 
-    font-family: monospace;
-    font-size: 25px;
-
-    transition: 0.2s;
-}
-
-nav a:hover {
-    color: #0795d3;
-}
-
-nav a.ativo {
-    color: #0795d3;
-}
 
 
