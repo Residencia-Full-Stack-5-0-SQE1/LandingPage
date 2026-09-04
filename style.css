@@ -46,6 +46,7 @@ h2{
     font-family: monospace;
     font-size: 34px;
     font-weight: 100;
+    margin: 30px;
 }
 
 
@@ -116,6 +117,7 @@ h2{
 .metodologia{
     
     width: 800px;
+    margin-left: 30px;
     
     font-family: Helvetica;
 
@@ -125,25 +127,54 @@ h2{
    
 
 }
-.estudantes{
+.estudantes {
     display: flex;
-    gap: 10px;           /* Espaço entre os quadros */
     justify-content: center;
-
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.integrantes{
-      display: flex;
-    width: 200px;  /* garante que a largura seja só o necessário */
-    margin: auto;
-    gap: 35px;
-    margin: 35px;
+.integrantes {
+    width: 275px;
+    height: 450px;
 
-    padding: 300px 100px;
-    border: 2px solid #202020;
-    border-radius: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+
+    background-color: #f0f8ff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Ícone */
+.icone {
+    font-size: 100px;
+    margin-bottom: 35px;
+}
+
+/* Nome */
+.nome {
+    margin: 0;
+    color: #0099dd;
+    font-size: 23px;
     text-align: center;
-    color: #0795d3;
+}
+
+/* Frase */
+.frase {
+    margin-top: 35px;
+    color: #222;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .stacks {
@@ -167,12 +198,7 @@ h2{
     text-align: center;
     color: #0795d3;
 
-    
-
 }
-
-
-
 
 
 nav {
