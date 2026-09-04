@@ -30,6 +30,9 @@ header {
     border-bottom: 1px solid #000000;
 
     padding: 0 28px;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index:9999;
 }
 
 nav {
@@ -125,7 +128,7 @@ h3 {
 
     display: flex;
     width: fit-content;
-    /* garante que a largura seja só o necessário */
+    
     margin: auto;
 
     padding: 16px 32px;
@@ -260,8 +263,7 @@ h3 {
 }
 
 .stack:hover {
-
-    transform: translateY(-5px);
+ transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     
 }
@@ -421,5 +423,4 @@ footer img {
 .linkedin:hover {
     background-color: #f0f8ff;
      
-    
 }
