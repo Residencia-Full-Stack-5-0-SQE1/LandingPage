@@ -238,11 +238,11 @@ h3 {
 }
 
 .stacks {
-    gap: 10px;
-     display: flex;
-    flex-direction: column;
-    align-items: center;
+   display: flex;
     justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .stack {
