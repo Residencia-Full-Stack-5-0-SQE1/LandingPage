@@ -66,8 +66,9 @@ nav a:hover {
 #integrantes,
 #metodologia,
 #projetos,
+#stacks,
 #sobre {
-    scroll-margin-top: 110px;
+    scroll-margin-top: 100px;
 }
 
 h2 {
