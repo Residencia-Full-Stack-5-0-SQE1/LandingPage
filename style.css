@@ -51,6 +51,7 @@ h2{
     
 }
 
+<<<<<<< HEAD
 .apresentacao{
     text-align: center;
     font-family: "Arimo", sans-serif;
@@ -79,6 +80,8 @@ h2{
     }
 }
 
+=======
+>>>>>>> 37f7db43819a28ad3b75e2add157b4fab8b5c014
 .navegacao{
     display: flex;
     align-items: center;
