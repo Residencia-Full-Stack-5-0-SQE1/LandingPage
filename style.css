@@ -79,6 +79,7 @@ h2 {
 }
 
 
+
 h3 {
     margin: 30px;
     font-family: Helvetica;
@@ -246,6 +247,10 @@ h3 {
     flex-wrap: wrap;
     margin-top: 30px;
     font-family: DM monospace;
+}
+
+.stacks h2 {
+    margin: 0 0 0px 0;
 }
 
 .stack img {
