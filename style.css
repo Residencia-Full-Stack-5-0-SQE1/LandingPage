@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 main {
     padding-top: 100px;
     scroll-behavior: smooth;
