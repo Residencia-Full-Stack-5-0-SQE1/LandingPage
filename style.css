@@ -30,9 +30,9 @@ header {
     border-bottom: 1px solid #000000;
 
     padding: 0 28px;
-    
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index:9999;
+    z-index: 9999;
 }
 
 nav {
@@ -129,7 +129,7 @@ h3 {
 
     display: flex;
     width: fit-content;
-    
+
     margin: auto;
 
     padding: 16px 32px;
@@ -177,7 +177,8 @@ h3 {
     flex-wrap: wrap;
     margin-top: 30px;
 }
-.mentores{
+
+.mentores {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -207,7 +208,7 @@ h3 {
     color: #0795d3;
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    
+
 }
 
 /* DAQUI PRA BAIXO É INTEGRANTES */
@@ -239,35 +240,37 @@ h3 {
 }
 
 .stacks {
-   display: flex;
+    display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 30px;
+    font-family: DM monospace;
+}
+
+.stack img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .stack {
-
     display: flex;
-    width: 200px;
-    margin: auto;
-    gap: 35px;
-    margin: 35px;
-
-    padding: 200px 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 32px;
+    padding: 32px;
+    
     border: 1px solid #202020;
     border-radius: 10px;
-    text-align: center;
-    color: #0795d3;
-
-    background-color: #f0f8ff;
-
 }
 
+
 .stack:hover {
- transform: translateY(-5px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    
+
 }
 
 
@@ -278,10 +281,6 @@ footer img {
     margin-block-end: 30px;
     justify-self: center;
 }
-
-
-
-
 
 
 
@@ -336,8 +335,8 @@ footer img {
         ========================= */
 
 .modal-content {
-    width: 1000px;
-    height: 250px;
+    width: 800px;
+    height: 350px;
     background: #fff;
     padding: 30px;
     border: 1px solid #202020;
@@ -424,5 +423,5 @@ footer img {
 
 .linkedin:hover {
     background-color: #f0f8ff;
-     
+
 }
