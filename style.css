@@ -406,8 +406,12 @@ footer img {
 
 .modal-info h2 {
     text-align: left;
-    margin-left: 0;
-    margin-top: 0;
+
+    margin: 0 0 0 0;
+
+    font-family: monospace;
+    font-size: 34px;
+    font-weight: 100;
 
 
 }
@@ -425,6 +429,7 @@ footer img {
     border: 1px solid #202020;
     border-radius: 8px;
     transition: 0.3s;
+    
 
 }
 
