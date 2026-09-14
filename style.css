@@ -1,5 +1,5 @@
 main {
-    padding-top: 100px;
+    padding-top: 6.25rem;
     scroll-behavior: smooth;
 }
 
@@ -9,7 +9,7 @@ html {
 
 body {
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -24,7 +24,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    height: 75px;
+    height: 4.6875rem;
     background-color: #fff;
 
     display: flex;
@@ -33,9 +33,9 @@ header {
 
     border-bottom: 1px solid #000000;
 
-    padding: 0 28px;
+    padding: 0 1.75rem;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
     z-index: 9999;
 }
 
@@ -46,7 +46,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 nav a {
@@ -54,7 +54,7 @@ nav a {
     text-decoration: none;
 
     font-family: monospace;
-    font-size: 25px;
+    font-size: 1.5625rem;
 
     transition: 0.2s;
 }
@@ -72,37 +72,37 @@ nav a:hover {
 #projetos,
 #stacks,
 #sobre {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 6.25rem;
 }
 
 h2 {
     font-family: monospace;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 100;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 
 
 h3 {
-    margin: 30px;
+    margin: 1.875rem;
     font-family: Helvetica;
     text-align: left;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 100;
 }
 
 
 
 .logo {
-    width: 90px;
+    width: 5.625rem;
     display: flex;
 
 }
 
 .logoOriginal {
     display: flex;
-    height: 250px;
+    height: 15.625rem;
     justify-content: center;
 
 }
@@ -119,14 +119,14 @@ h3 {
 
 .descricao {
 
-    width: 1000px;
-    margin: 0 auto 30px auto;
-    padding: 20px;
+    width: 62.5rem;
+    margin: 0 auto 1.875rem auto;
+    padding: 1.25rem;
     font-family: Helvetica;
 
     text-align: center;
 
-    font-size: 24px;
+    font-size: 1.5rem;
 
 }
 
@@ -137,13 +137,13 @@ h3 {
 
     margin: auto;
 
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     border: 1px solid #202020;
-    border-radius: 100px;
+    border-radius: 6.25rem;
 
     color: #202020;
     font-family: monospace;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
     background-color: #f0f8ff;
 
@@ -153,8 +153,8 @@ h3 {
 
 .btmetodologia:hover {
     color: #0795d3;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 
 .tag {
@@ -163,14 +163,14 @@ h3 {
 
 .metodologia {
 
-    width: 800px;
-    margin-left: 30px;
+    width: 50rem;
+    margin-left: 1.875rem;
 
     font-family: Helvetica;
 
     text-align: left;
 
-    font-size: 28px;
+    font-size: 1.75rem;
 
 
 }
@@ -178,25 +178,25 @@ h3 {
 .estudantes {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .mentores {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .integrantes {
-    width: 275px;
-    height: 450px;
+    width: 17.1875rem;
+    height: 28.125rem;
 
     border: 1px solid #333;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
     background-color: #fff;
 
@@ -206,43 +206,43 @@ h3 {
     
 
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .integrantes:hover {
     color: #0795d3;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
 
 }
 
 /* DAQUI PRA BAIXO É INTEGRANTES */
 .icone {
-    width: 210px;
-    height: 220px;
+    width: 13.125rem;
+    height: 13.75rem;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
     flex-shrink: 0;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 
 }
 
 /* Nome */
 .nome {
     margin: 0;
-    min-height: 20px;
+    min-height: 1.25rem;
     color: #0099dd;
-    font-size: 23px;
+    font-size: 1.4375rem;
     text-align: center;
 }
 
 /* Frase */
 .frase {
-    margin: 20px 0 0;
+    margin: 1.25rem 0 0;
     color: #222;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
     text-align: center;
 }
@@ -250,19 +250,19 @@ h3 {
 .stacks {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     font-family: DM monospace;
 }
 
 .stacks h2 {
-    margin: 0 0 0px 0;
+    margin: 0 0 0 0;
 }
 
 .stack img {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     object-fit: contain;
 }
 
@@ -270,18 +270,18 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    gap: 32px;
-    padding: 32px;
+    padding: 1.875rem;
+    gap: 2rem;
+    padding: 2rem;
 
     border: 1px solid #202020;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 
 .stack:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.15);
 
 }
 
@@ -290,7 +290,7 @@ footer img {
     width: 40%;
     height: auto;
     display: flex;
-    margin-block-end: 30px;
+    margin-block-end: 1.875rem;
     justify-self: center;
 }
 
@@ -349,13 +349,13 @@ footer img {
         ========================= */
 
 .modal-content {
-    width: 900px;
-    height: 350px;
+    width: 56.25rem;
+    height: 21.875rem;
     background: #fff;
-    padding: 30px;
+    padding: 1.875rem;
     border: 1px solid #202020;
 
-    border-radius: 20px;
+    border-radius: 1.25rem;
 
     position: relative;
 
@@ -372,36 +372,36 @@ footer img {
 /* IMAGEM DO MODAL */
 
 .modal-content img {
-    width: 300px;
-    height: 350px;
+    width: 18.75rem;
+    height: 21.875rem;
 
     object-fit: cover;
 
-    border-radius: 12px;
+    border-radius: 0.75rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .modal-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 30px;
-    height:350px;
+    margin-left: 1.875rem;
+    height:21.875rem;
 }
 
 
 .modal-info > div{
     margin-top:auto;
-    padding-block-end: 10px;
+    padding-block-end: 0.625rem;
 }
 
 
 .modal-body {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: flex-start;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .modal-info h2 {
@@ -410,7 +410,7 @@ footer img {
     margin: 0 0 0 0;
 
     font-family: monospace;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 100;
 
 
@@ -418,16 +418,16 @@ footer img {
 
 .linkedin {
     align-self: flex-start;
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
 
 
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
 
     background-color: #fff;
     color: black;
     border: 1px solid #202020;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: 0.3s;
     
 
@@ -448,10 +448,10 @@ footer img {
 .fechar {
     position: absolute;
 
-    top: 15px;
-    right: 20px;
+    top: 0.9375rem;
+    right: 1.25rem;
 
-    font-size: 40px;
+    font-size: 2.5rem;
 
     cursor: pointer;
 
@@ -461,6 +461,3 @@ footer img {
 .fechar:hover {
     color: #0094d6;
 }
-
-
-
