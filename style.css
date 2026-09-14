@@ -462,5 +462,14 @@ footer img {
     color: #0094d6;
 }
 
+.sobre-nos {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-
+.sobre-nos img {
+    border: solid 1px #000;
+    border-radius: 10px;
+}
